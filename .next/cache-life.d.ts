@@ -8,3 +8,5 @@ declare module 'next/cache' {
   } from 'next/dist/server/web/spec-extension/revalidate'
   export { unstable_noStore } from 'next/dist/server/web/spec-extension/unstable-no-store'
   export { io } from 'next/dist/server/request/io'
+
+    export function cacheLife(profile: "default"): void
