@@ -18,3 +18,5 @@ declare module 'next/cache' {
     export function cacheLife(profile: "hours"): void
 
     export function cacheLife(profile: "weeks"): void
+
+    export function cacheLife(profile: "max"): void
