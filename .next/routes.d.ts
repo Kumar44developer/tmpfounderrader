@@ -8,3 +8,5 @@ type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRo
 interface ParamMap {
   "/": {}
 }
+
+export type ParamsOf<Route extends Routes> = ParamMap[Route]
