@@ -17,3 +17,15 @@ interface LayoutSlotMap {
 }
 
 export type { AppRoutes, PageRoutes, LayoutRoutes, RedirectRoutes, RewriteRoutes, ParamMap }
+
+declare global {
+  /**
+   * Props for Next.js App Router page components
+   * @example
+   * ```tsx
+   * export default function Page(props: PageProps<'/blog/[slug]'>) {
+   *   const { slug } = await props.params
+   *   return <div>Blog post: {slug}</div>
+   * }
+   * ```
+   */
