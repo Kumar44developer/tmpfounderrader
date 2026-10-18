@@ -36,3 +36,6 @@ declare module 'next/cache' {
       expire?: number
     }): void
   
+
+  import { cacheTag } from 'next/dist/server/use-cache/cache-tag'
+  export { cacheTag }
