@@ -10,3 +10,5 @@ declare module 'next/cache' {
   export { io } from 'next/dist/server/request/io'
 
     export function cacheLife(profile: "default"): void
+
+    export function cacheLife(profile: "seconds"): void
